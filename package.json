@@ -1,0 +1,27 @@
+{
+  "name": "@monorepo-template/main",
+  "version": "0.0.1",
+  "author": "keiko37",
+  "license": "MIT",
+  "private": true,
+  "nx": {},
+  "engines": {
+    "node": ">=20.10.0",
+    "npm": ">=10.2.3"
+  },
+  "scripts": {
+    "types:build": "npx nx build @monorepo-template/types",
+    "types:check": "npx nx check @monorepo-template/types",
+    "types:dev": "npx nx dev @monorepo-template/types",
+    "cache:clear": "npx nx reset"
+  },
+  "devDependencies": {
+    "@nx/js": "18.0.5",
+    "nx": "18.0.5",
+    "typescript": "^5.3.3"
+  },
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ]
+}

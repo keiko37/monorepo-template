@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+      "moduleResolution": "NodeNext",
+      "module": "NodeNext",
+      "target": "ES2021",
+      "lib": ["es6"],
+      "baseUrl": "./",
+      "rootDir": "./",
+      "outDir": "./dist",
+      "declaration": true,
+      "declarationMap": true,
+      "sourceMap": true
+  }
+}

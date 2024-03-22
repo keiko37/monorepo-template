@@ -1,0 +1,15 @@
+{
+  "name": "@monorepo-template/types",
+  "version": "0.0.1",
+  "private": true,
+  "author": "keiko37",
+  "license": "MIT",
+  "keywords": [],
+  "main": "dist/index.js",
+  "types": "dist/*/**.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "check": "tsc --noEmit",
+    "dev": "tsc --watch"
+  }
+}
