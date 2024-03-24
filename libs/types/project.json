@@ -1,0 +1,4 @@
+{
+  "name": "@monorepo-template/types",
+  "tags": ["scope:shared", "type:types"]
+}

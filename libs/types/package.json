@@ -7,9 +7,6 @@
   "keywords": [],
   "main": "dist/index.js",
   "types": "dist/*/**.d.ts",
-  "nx": {
-    "tags": ["scope:shared", "type:types"]
-  },
   "scripts": {
     "build": "rm -rf dist && tsc",
     "check": "tsc --noEmit",
