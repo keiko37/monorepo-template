@@ -12,11 +12,16 @@
   "scripts": {
     "types:build": "npx nx build @monorepo-template/types",
     "types:check": "npx nx check @monorepo-template/types",
+    "types:lint": "npx nx lint @monorepo-template/types",
     "types:dev": "npx nx dev @monorepo-template/types",
     "cache:clear": "npx nx reset"
   },
   "devDependencies": {
+    "@nx/devkit": "^18.0.5",
+    "@nx/eslint": "^18.0.5",
+    "@nx/eslint-plugin": "^18.0.5",
     "@nx/js": "18.0.5",
+    "eslint": "~8.48.0",
     "nx": "18.0.5",
     "typescript": "^5.3.3"
   },

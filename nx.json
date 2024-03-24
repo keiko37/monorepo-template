@@ -6,10 +6,26 @@
   },
   "targetDefaults": {
     "build": {
-      "dependsOn": ["^build"],
-      "inputs": ["{projectRoot}/**/*", "!{projectRoot}/**/*.md", "!{projectRoot}/dist/**/*"],
-      "outputs": ["{projectRoot}/dist/"],
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "{projectRoot}/**/*",
+        "!{projectRoot}/**/*.md",
+        "!{projectRoot}/dist/**/*"
+      ],
+      "outputs": [
+        "{projectRoot}/dist/"
+      ],
       "cache": true
     }
-  }
+  },
+  "plugins": [
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ]
 }
